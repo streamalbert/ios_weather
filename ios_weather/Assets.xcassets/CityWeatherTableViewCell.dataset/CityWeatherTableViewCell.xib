@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="CityWeatherTableViewCell" customModule="ios_weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sml-md-s3X">
+                        <rect key="frame" x="8" y="20" width="103" height="19"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjK-eQ-Y2y">
+                        <rect key="frame" x="239" y="20" width="38" height="19"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="180.34°C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMY-3I-44s">
+                        <rect key="frame" x="287" y="20" width="80" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="qhI-S3-e3a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BMY-3I-44s" secondAttribute="trailing" constant="8" id="Fbm-Ln-EKH"/>
+                    <constraint firstItem="sml-md-s3X" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OKo-H1-5iV"/>
+                    <constraint firstItem="BMY-3I-44s" firstAttribute="leading" secondItem="WjK-eQ-Y2y" secondAttribute="trailing" constant="10" id="atH-dR-2iJ"/>
+                    <constraint firstItem="BMY-3I-44s" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iQD-5e-qmU"/>
+                    <constraint firstItem="WjK-eQ-Y2y" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oo7-mj-PWJ"/>
+                    <constraint firstItem="sml-md-s3X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="oty-C6-b89"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="sml-md-s3X" id="3tT-r0-SSB"/>
+                <outlet property="tempLabel" destination="BMY-3I-44s" id="JWW-ow-zn7"/>
+                <outlet property="weatherLabel" destination="WjK-eQ-Y2y" id="ENb-Lp-dme"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

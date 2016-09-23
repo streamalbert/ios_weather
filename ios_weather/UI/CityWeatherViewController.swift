@@ -134,7 +134,7 @@ extension CityWeatherViewController: CLLocationManagerDelegate {
             manager.stopUpdatingLocation()
             return
         }
-        
+
         if let userLocation = locations.first {
             lon = userLocation.coordinate.longitude
             lat = userLocation.coordinate.latitude
